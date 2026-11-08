@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Depends, HTTPException
+﻿from fastapi import FastAPI, Depends, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import text
 from sqlalchemy.orm import Session
@@ -8,6 +8,8 @@ from models.complaint import Complaint
 from models.history import ComplaintHistory
 from database import get_db
 from routes.complaints import router as complaint_router
+from routes.officer import router as officer_router
+from routes.officer import router as officer_router
 
 
 # 1. Create the FastAPI application first
@@ -29,6 +31,8 @@ app.add_middleware(
 
 # 3. Include complaint routes after creating app
 app.include_router(complaint_router)
+app.include_router(officer_router)
+app.include_router(officer_router)
 
 
 # 4. Home route
