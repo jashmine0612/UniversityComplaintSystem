@@ -1,0 +1,189 @@
+﻿.officer-login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1f5f9;
+  font-family: Arial, sans-serif;
+}
+
+.officer-login-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 380px;
+  padding: 32px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #1e293b;
+}
+
+.officer-login-card h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.officer-subtitle {
+  margin: 0 0 12px;
+  text-align: center;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.officer-login-card label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.officer-login-card input {
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.officer-login-card button {
+  margin-top: 12px;
+  padding: 11px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.officer-login-card button:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+.officer-error {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.officer-page {
+  min-height: 100vh;
+  background: #f1f5f9;
+  font-family: Arial, sans-serif;
+  color: #1e293b;
+  padding: 0 24px 24px;
+}
+
+.officer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e3a8a;
+  color: #ffffff;
+  margin: 0 -24px 20px;
+  padding: 14px 24px;
+}
+
+.officer-header h2 { margin: 0; }
+.officer-header-right { display: flex; align-items: center; gap: 14px; }
+
+.officer-btn-light {
+  background: #ffffff;
+  color: #1e3a8a;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.officer-toolbar { margin-bottom: 16px; }
+.officer-toolbar select { padding: 6px; border-radius: 6px; }
+
+.officer-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.officer-table th, .officer-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.officer-table th { background: #e2e8f0; }
+
+.badge {
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  background: #e2e8f0;
+}
+
+.priority-LOW { background: #dcfce7; color: #166534; }
+.priority-MEDIUM { background: #fef9c3; color: #854d0e; }
+.priority-HIGH { background: #ffedd5; color: #9a3412; }
+.priority-CRITICAL { background: #fee2e2; color: #991b1b; }
+
+.status-PENDING { background: #e2e8f0; color: #334155; }
+.status-IN_PROGRESS { background: #dbeafe; color: #1e40af; }
+.status-AWAITING_VERIFICATION { background: #f3e8ff; color: #6b21a8; }
+
+.officer-back-link { color: #ffffff; text-decoration: none; }
+
+.officer-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.officer-card h3 { margin-top: 0; }
+
+.officer-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.officer-text-block { white-space: pre-wrap; margin-top: 4px; }
+
+.officer-card textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 8px 0 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+}
+
+.officer-btn-primary {
+  padding: 10px 18px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.officer-btn-primary:disabled { background: #93c5fd; cursor: not-allowed; }
+
+.officer-success {
+  background: #dcfce7;
+  color: #166534;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
